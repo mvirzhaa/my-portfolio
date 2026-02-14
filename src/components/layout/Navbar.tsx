@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { ThemeToggle } from '../ThemeToggle';
 
 export default function Navbar() {
   return (
@@ -11,6 +12,9 @@ export default function Navbar() {
         <div className="space-x-8 text-sm font-medium text-gray-400">
           <Link href="/" className="hover:text-white transition">Home</Link>
           <Link href="/projects" className="hover:text-white transition">Projects</Link>
+          <Link href="/about" className="hover:text-white transition">About</Link>
+          <a href="mailto:muhamadvirzhaa@gmail.com" className="hover:text-white transition">Contact</a>
+          <ThemeToggle />
         </div>
       </div>
     </nav>
